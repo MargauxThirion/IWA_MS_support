@@ -10,10 +10,10 @@ public class SupportQuestion {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer questionId;
+    private Long questionId;
 
     @Column(nullable = false)
-    private Integer userId;
+    private Long userId;
 
     @Column(length = 100, nullable = false)
     private String subject;
@@ -25,19 +25,19 @@ public class SupportQuestion {
     private String status = "open";
 
     // Getters and Setters
-    public Integer getQuestionId() {
+    public Long getQuestionId() {
         return questionId;
     }
 
-    public void setQuestionId(Integer questionId) {
+    public void setQuestionId(Long questionId) {
         this.questionId = questionId;
     }
 
-    public Integer getUserId() {
+    public Long getUserId() {
         return userId;
     }
 
-    public void setUserId(Integer userId) {
+    public void setUserId(Long userId) {
         this.userId = userId;
     }
 
